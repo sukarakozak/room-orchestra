@@ -1,0 +1,53 @@
+/* Room Orchestra · yazı tipleri
+   Laboratuvarın piksel / daktilo yazı tipleri (Silkscreen, Pixelify Sans, VT323, IM Fell English) yerine
+   modern yazı tipleri. Hepsi laboratuvarın fonts/ klasöründe zaten var (açık lisanslı). style.css'ten SONRA yüklenir. */
+
+:root {
+  --ui: 'Space Grotesk', 'DM Sans', system-ui, sans-serif;   /* başlıklar, düğmeler, sekmeler */
+  --text: 'DM Sans', system-ui, sans-serif;                   /* metin */
+  --mono: 'IBM Plex Mono', ui-monospace, monospace;           /* sayılar, kod */
+  --serif: 'Instrument Serif', Georgia, serif;                /* alt yazı */
+}
+
+body { font-family: var(--text); }
+
+/* düğmeler ve sekmeler: PLAY · CODE · NOTES, RESTART, PAUSE, NIGHT … */
+.btn, .pills button, .bar .btn, .run, .bottom-dock summary {
+  font-family: var(--ui) !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.04em;
+}
+.pills button { font-size: 13px !important; }
+
+/* başlık çubuğu */
+.bar h1 { font-family: var(--ui) !important; font-weight: 500 !important; letter-spacing: 0.02em; }
+.bar small { font-family: var(--text) !important; font-size: 13px !important; }
+
+/* HUD ve INPUT · RULE · STATE · OUTPUT kartları */
+.hud small, .anat small { font-family: var(--ui) !important; font-weight: 500 !important; font-size: 9px !important; letter-spacing: 0.08em; }
+.hud b { font-family: var(--mono) !important; font-size: 17px !important; line-height: 1.2 !important; }
+.anat b { font-family: var(--mono) !important; font-size: 13px !important; line-height: 1.35 !important; }
+
+/* başlangıç ekranı */
+.overlay small { font-family: var(--ui) !important; font-weight: 500 !important; letter-spacing: 0.1em; }
+.overlay h2 { font-family: var(--ui) !important; font-weight: 500 !important; letter-spacing: 0.01em; }
+.overlay p { font-family: var(--serif) !important; font-size: 19px !important; }
+#overlay .err { font-family: var(--mono) !important; font-size: 13px !important; }
+
+/* sahne altı yazı ve kontroller */
+.serif, .caption, .bottom-dock .caption { font-family: var(--serif) !important; }
+.bottom-dock details, .bottom-dock details p, .controls-popover { font-family: var(--text) !important; font-size: 14px !important; }
+
+/* sahnedeki nota etiketleri */
+.tag { font-family: var(--mono) !important; font-size: 13px !important; line-height: 1.5 !important; }
+
+/* CODE ve NOTES pencereleri */
+.win, .win .title span { font-family: var(--ui) !important; font-weight: 500 !important; }
+.code pre, .code input, .code select, .code .foot { font-family: var(--mono) !important; font-size: 13px !important; line-height: 1.55 !important; }
+.notes .body, .notes table, .notes .task, .notes .src { font-family: var(--text) !important; font-size: 14px !important; }
+.notes .pp, .notes .q { font-family: var(--serif) !important; font-size: 17px !important; }
+.notes .pp b, .notes th, .notes h3 { font-family: var(--ui) !important; font-weight: 500 !important; letter-spacing: 0.06em; }
+
+/* duraklat satırı, yükleme kartı, bildirim */
+.pause-tools, .pause-tools label, #pauseStatus { font-family: var(--text) !important; font-size: 13px !important; }
+.load-status, .toast { font-family: var(--text) !important; }
