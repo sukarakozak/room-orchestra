@@ -1,9 +1,9 @@
 # Room Orchestra
 
 **Premises:** 01 Agency × 06 Context
-**Live link:** https://YOUR-USERNAME.github.io/premise-remix/
+**Live link:** https://sukarakozak.github.io/room-orchestra/
 
-Every key on the keyboard is an object-musician on a round stage (teacups, kettles, metronomes, tin cans, led by an alarm-clock conductor). The loudness of the room decides how far a key reaches: in a quiet room one key plays one object and 5–8 notes fall from the clouds, in a busy room its whole row plays and 10–15 notes fall, in a loud room the whole band plays and every falling note is blown away. Click the curtain to reveal a gramophone soloist; click the street lamp to light the stage (try NIGHT).
+Every key on the keyboard is an object-musician on a rectangular festival stage (teacups, kettles, metronomes, tin cans, led by an old radio whose antenna is the baton and whose four lights blink with the playing rows). The loudness of the room decides how far a key reaches: in a quiet room one key plays one object and 5–8 notes fall from the clouds, in a busy room its whole row plays and 10–15 notes fall, in a loud room the whole band plays and every falling note is blown away. Click the curtain to reveal a gramophone soloist; click the street lamp to light the stage (try NIGHT).
 
 ## How to use
 
@@ -31,7 +31,6 @@ All numbers and rules are in the `design` object at the top of `script.js`, and 
 
 ## AI note
 
-<!-- FILL IN YOURSELF: which tools you used and for what, plus one example you rejected or corrected. -->
-- Tool(s) used: …
-- What for: …
-- One thing I rejected or corrected: …
+- **Tool used:** Claude (Anthropic).
+- **What for:** writing and debugging most of `script.js` from my instructions (the stage, object-musicians, microphone reading, the room → agency rule, note rain, crowd and festival), helping me publish on GitHub Pages, and drafting this README and `RATIONALE.md` from my design decisions, which I then reviewed.
+- **What I rejected or corrected:** the first version looked too close to the lab's Key Orchestra, so I asked for objects instead of characters, a rectangular stage with square pedestals and no letters under the musicians. I replaced the first conductor (an alarm clock) with an old radio whose lights show which rows are playing. I rejected idle note rain and an always-moving audience because they hid the link between a key press and its result, and night mode had to be fixed twice before it actually changed the lighting.
